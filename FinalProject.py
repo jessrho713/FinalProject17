@@ -100,21 +100,19 @@ talkdragon=("""
                      | _____________   /
                      | |            | |
                      |_|            |_|""")
-#I am going to define the player
-y=input()
-#Defining the character's attributes
-class character():
-    def __init__(self):
-        self.hearts=({2})
-        self.correct=({0})
-        self.wrong=({0})
-        self.description_status=(f"\n<<<You currently have {self.hearts} more chances. You have gotten {self.correct} riddles right, and {self.wrong} wrong.>>>")
-test=character()
+#I am going to define the player's "right" and "wrong" count. 
 yay=0
 nou=1
+#Defining the character's attributes. This is to count how many rights and wrongs the player starts with.
+class character():
+    def __init__(self):
+        self.description_status=(f"\n<<<You currently have {self.hearts} more chances. You have gotten {self.correct} riddles right, and {self.wrong} wrong.>>>")
+test=character()
 #Starting the game >>>>>>
+#The printing with the numbers and symbols is changing the color of the code.
 print("\033[2;30;31m \n")
 print(first_string)
+#The input is the enter key.
 input()
 print("\033[1;37;40m \n")
 print(castle)
@@ -145,7 +143,7 @@ input()
 print("\033[1;37;40m \n")
 print(test.description_status)
 print("Enter the correct number for the answers listed\n")
-#Initialising riddles
+#Initialising riddles to be chosen randomly.
 riddles={1:"I sink in water but never drown, I catch prey on my barbed teeth, and I hunt all day yet never eat. \n What am I?", 2:"What question can you honestly never answer yes to?", 3: "There are ten stacks of 10 coins. Each coin weighs one ounce. \nYou know that one stack of coins is counterfeit, and the coins in that stack weigh 1.1 ounces instead. \nYou have a scale that can tell you the exact weight (in ounces) of whatever you put on it. \nWhat is the fewest number of weighings you can perform to find the counterfeit stack?", 4: "You are in a race and overtake second place. What place are you in?", 5: "When is 99 more than 100?", 6: "There are two sisters: one gives birth to the other and she, in turn, gives birth to the first. Who are the two sisters?", 7: "A man is standing in front of a painting of a man when he says, \n'Brothers and sisters have I none, but this man's father is my father's son.' \nWho is in the painting?", 8: "A hunter leaves his cabin early in the morning and walks one mile due south. \nHere he sees a bear and starts chasing it for one mile due east before he is able to shoot the bear. \nAfter shooting the bear, he drags it one mile due north back to his cabin where he started that morning. \n What color is the bear?"}
 numby=random.randint(1,8)
 print(numby)
@@ -239,7 +237,7 @@ if numby==8:
         print("The dragon looks at you, annoyed. -Guessen\', are ya? Maybe I\'m more hungry than bored.-")
         nou=(nou-1)
         print(nou)
-
+#This is the rewards and consequences at the end of the game based on how many riddles the player got right and wrong.
 if yay==1:
     print("You managed to get close enough to the harp to play a few chords. As if like magic, the harp begins to play itself. \n The dragon falls asleep. >>>")
     input()
@@ -247,6 +245,7 @@ if yay==1:
     print("You escape! >>> ")
     input()
     print("\033[1;30;41m  \n")
+#hopefully, the next 2 lines of code will cause python to crash, and the game will end in a creative and unexpected way.
     for x in range (100000):
         print("RUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUN")
 if nou==0:
@@ -256,6 +255,6 @@ if nou==0:
     print("You feel the searing of your flesh and bones as the dragon crunches through you. You wonder why you aren\'t dead yet.>>>")
     input()
     print("\033[1;30;41m  \n")
-#hopefully, the next 2 lines of code will cause python to crash, and the game will end.
+#hopefully, the next 2 lines of code will cause python to crash, and the game will end in a creative and unexpected way.
     for x in range (100000):
         print("SHUT DOWN               SHUT DOWN             SHUT DOWN               SHUT DOWN           \nMAKE IT STOP               MAKE IT STOP             MAKE IT STOP              MAKE IT STOP           ")
