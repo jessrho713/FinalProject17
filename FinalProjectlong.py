@@ -1,3 +1,4 @@
+#This is the long version. I was having trouble getting the riddles to print more than once, and I had help with making my intended goal. The short version was made by myself, and the long version was made with help and displays what I originally intended the code to do.
 import random
 #The player is trapped in a dragon's lair, and they were caught trying to steal some of the dragon's hoarded gold. The dragon wakes up and considers eating the player, but instead decides to entertain itself by asking the player riddles.
 first_string ="Welcome. You are a petty thief, and you have learned that there is a chamber filled with gold and jewels inside the old castle on the hill.\n Seems too good to be true, but you decide to check it out.\nPress enter to continue whenever you see >>>."
@@ -101,7 +102,6 @@ talkdragon=("""
                      | |            | |
                      |_|            |_|""")
 #I am going to define the player
-y=input()
 #Defining the character's attributes
 class character():
     def __init__(self):
@@ -110,9 +110,8 @@ class character():
         self.wrong=({0})
         self.description_status=(f"\n<<<You currently have {self.hearts} more chances. You have gotten {self.correct} riddles right, and {self.wrong} wrong.>>>")
 test=character()
-#Setting consequences and rewards
-
 #Starting the game >>>>>>
+#printing commands fiilled with numbers and symbols are colors.
 print("\033[2;30;31m \n")
 print(first_string)
 input()
@@ -145,8 +144,9 @@ input()
 print("\033[1;37;40m \n")
 print(test.description_status)
 print("Enter the correct number for the answers listed\n")
-#Initialising riddles
+#Initialising riddles that are chosen randomly
 riddles = ["Hello","I sink in water but never drown, I catch prey on my barbed teeth, and I hunt all day yet never eat. \n What am I?","What question can you honestly never answer yes to?","There are ten stacks of 10 coins. Each coin weighs one ounce. \nYou know that one stack of coins is counterfeit, and the coins in that stack weigh 1.1 ounces instead. \nYou have a scale that can tell you the exact weight (in ounces) of whatever you put on it. \nWhat is the fewest number of weighings you can perform to find the counterfeit stack?", "You are in a race and overtake second place. What place are you in?", "When is 99 more than 100?","There are two sisters: one gives birth to the other and she, in turn, gives birth to the first. Who are the two sisters?", "A man is standing in front of a painting of a man when he says, \n'Brothers and sisters have I none, but this man's father is my father's son.' \nWho is in the painting?",  "A hunter leaves his cabin early in the morning and walks one mile due south. \nHere he sees a bear and starts chasing it for one mile due east before he is able to shoot the bear. \nAfter shooting the bear, he drags it one mile due north back to his cabin where he started that morning. \n What color is the bear?"]
+#This is where I had the most help. I created all the if/else loops, but I was shown how to put it all in a working function.
 def riddle():
     yay=0
     nou=2
@@ -249,6 +249,7 @@ def riddle():
 status = riddle()
 yay = status[0]
 nou = status[1]
+#These are the rewards/consequences for the more complex game, which give the players more chances.
 if yay>3:
     print("You managed to get close enough to the harp to play a few chords. As if like magic, the harp begins to play itself. \n The dragon falls asleep. >>>")
     input()
