@@ -2,7 +2,8 @@
 
 Final Project for Programming
  
-The player is trapped in a dragon's lair, and they were caught trying to steal some of the dragon's hoarded gold. The dragon wakes up and considers eating the player, but instead decides to entertain itself by asking the player riddles. This game is set up so the player has to choose the letter of the answer to the riddle. Choosing the right answer makes the player win, but choosing the wrong one makes the player lose. 
+The player is trapped in a dragon's lair, and they were caught trying to steal some of the dragon's hoarded gold. The dragon wakes up and considers eating the player, but instead decides to entertain itself by asking the player riddles. This game is set up so the player has to choose the letter of the answer to the riddle. Choosing the right answer makes the player win, but choosing the wrong one makes the player lose.
+This game is in multiple choice format, and there are two versions. There is the short version and the long version. The short version is one riddle long, and the long version is multiple. Both versions are very similar, and run the same way.
 
 Some sources I used:
 
@@ -22,3 +23,6 @@ http...(Who am I kidding) My wonderful friends!
 
     these sources helped the most by giving me riddle ideas and helping me to check my code :>
     
+Presentation:
+
+https://docs.google.com/presentation/d/1cG2470Lqz0sMv5CMRlf2UVbXHcS5oNoqsH_h6jNawNI/edit?usp=sharing
