@@ -16,3 +16,7 @@ Some sources I used:
   http://ozzmaker.com/add-colour-to-text-in-python/
 
     this source was a huge help in making my game fun with a spash of color.
+
+http...(Who am I kidding) My wonderful friends!
+
+    these sources helped the most by giving me riddle ideas and helping me to check my code :>
