@@ -159,7 +159,7 @@ def riddle():
         if numby==1:
             print(riddles[1])
             print(f" 1: A fish \n 2: A Fishing hook \n 3: An anchor \n 4: A bowling ball) \n")
-            if input()=="1":
+            if input()=="2":
                 print("The dragon smiles a menacing grin. -Oi cheers, ya got one. Maybe\'s luck. Can ya do anotha?")
                 yay=(yay+1)
                 print(yay)
